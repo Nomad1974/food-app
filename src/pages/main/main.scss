@@ -1,0 +1,28 @@
+
+.main {
+    padding: 220px 0 0 30px;
+    background: url(../../images/IMAGE.jpg) center (center / cover) no-repeat;
+    max-width: 100%;
+    min-height: 100vh;
+    &_small-heading {
+        font-family: Yellowtail;
+        font-size: 36px;
+        line-height: 64.8px;
+        line-height: 132%;
+        vertical-align: Top;
+        letter-spacing: 0.36px;
+        color: #79B52F;
+    }
+    &_heading {
+        margin-top: 14px;
+        max-width: 496px;
+        &-text {
+            font-family: Roboto;
+            font-weight: bold;
+            font-size: 59px;
+            line-height: 60px;
+            letter-spacing: 0.36px;
+            color: #1F253F;
+        }
+    }
+}
