@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Button from '../../components/button/Button';
 import './main.scss';
 
@@ -12,7 +14,10 @@ const Main = () => {
                     Добро пожаловать в мир вкусной еды
                 </span>
             </div>
+            <Link  to={'home'}>
             <Button />
+            </Link>
+            
         </section>
     );
 }
