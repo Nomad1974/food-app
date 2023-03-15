@@ -15,7 +15,7 @@ const Main = () => {
                 </span>
             </div>
             <Link  to={'home'}>
-            <Button />
+                <Button />
             </Link>
             
         </section>

@@ -6,7 +6,7 @@ const animationConfiguration = {
 };
 const Transitions = ({ children }) => {
     return (
-        <motion.section
+        <motion.div
             variants={animationConfiguration}
             initial="initial"
             animate="animate"
@@ -14,7 +14,7 @@ const Transitions = ({ children }) => {
             transition={{ duration: 3 }}
         >
             {children}
-        </motion.section>
+        </motion.div>
     );
 };
 export default Transitions;

@@ -1,0 +1,18 @@
+.footer {
+    height: 64px;
+    padding-top: 20px;
+    background-color: #808000;
+    opacity: 0.98;
+    
+    &_wrapper {
+        padding: 10px 0;
+    }
+    &_container {
+        width: 70%;
+        margin: 0 auto;
+        display: block;
+        font-family: Roboto;
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+}

@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 64px;
+    height: 70px;
     width: 100%;
     padding: 0 15px;
     background-color: #808000;
@@ -17,23 +17,6 @@
         text-decoration: none;
         line-height: 64px;
         font-size: 30px;
-    }
-
-    &_information {
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 150px;
-        color: #FFFFFF;
-
-        &_link {
-            display: inline;
-            text-decoration: none;
-            color: #FFFFFF;    
-            font-size: 16px;
-        }
     }
     
 }

@@ -9,18 +9,6 @@ const Header = () => {
                     Книга Рецептов
                 </Link>
             </div>
-            <ul className="header_information">
-                <li>
-                    <Link to="About" className="header_information_link">
-                        О нас
-                    </Link>
-                </li>
-                <li>
-                    <Link to="Contacts" className="header_information_link">
-                        Контакты
-                    </Link>
-                </li>
-            </ul>
         </nav>
     );
 };
