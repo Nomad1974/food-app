@@ -1,9 +1,12 @@
 
 .home{
-    background: url(../../images/image.png) center (center / cover) no-repeat;
+    background: url(../../images/background.jpg) center (center / cover) no-repeat;
+    
     max-width: 100%;
     min-height: 100vh;
     &_content {
+        margin: 0 auto;
+        max-width: 1280px;
         min-height: calc(100vh - 134px);
         padding: 20px 0;
     }

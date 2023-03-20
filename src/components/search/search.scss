@@ -1,0 +1,43 @@
+.search {
+    margin: 0 auto 20px auto;
+    
+    &_wrapper {
+        position: relative;
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    &_input {
+        width: 100%;
+        height: 3rem;
+        padding-left: 50px;
+        background-color:  #F8F8FF;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        font-family: Roboto;
+        color: #1F253F;
+    }
+    &_button {
+        display: inline-block;
+        position: absolute;
+        right: 1.5%;
+        bottom: 28%;
+        background-color: #802B00;
+        height: 38px;
+        width: 80px;
+        padding: 3px;
+        border: none;
+        border-radius: 2px;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
+        cursor: pointer;
+    }
+    &_icon-wrapper {
+        position: absolute;
+        left: 2%;
+        top: 34%;
+        width: 30px;
+        height: 30px;
+    }
+}
