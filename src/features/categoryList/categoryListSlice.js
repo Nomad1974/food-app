@@ -1,16 +1,16 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-const loadCategories = createAsyncThunk(
-    'categories/loadCategories',
-    (_, {extra: {client, api}}) => {
-        return client.get(api.ALL_CATEGORIES)
+export const loadCategories = createAsyncThunk(
+    'categories/getCategories',
+    (_, {extra: { client, api }}) => {
+        return client.get(api.ALL_CATEGORIES).json()
     }
 );
 
 const initialState = {
+    entities: [],
     status: 'idle',
     error: null,
-    entities: [],
 };
 
 const categoriesSlice = createSlice({
@@ -19,7 +19,7 @@ const categoriesSlice = createSlice({
     reducers: {},
     extraReducers: (builder) => {
         builder
-            .addCase(loadCategories.pending, (state) => {
+            .addCase(loadCategories.pending, state => {
                 state.status = 'loading';
                 state.error = null;
             })
@@ -28,12 +28,13 @@ const categoriesSlice = createSlice({
                 state.error = action.payload || action.error.message;
             })
             .addCase(loadCategories.fulfilled, (state, action) => {
-                state.status = 'recieved';
+                state.status = 'fullfilled';
                 state.entities = action.payload;
+                console.log(action.payload);
             })
     }
 });
 
 export const categoriesReducer = categoriesSlice.reducer;
 //selectors
-export const selectAllCategories = state => state.categories.entities;
+export const selectAllCategories = state => state.categories;

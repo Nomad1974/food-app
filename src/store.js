@@ -5,12 +5,12 @@ import { categoriesReducer } from './features/categoryList/categoryListSlice';
 import * as api from './config';
 
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
     categories: categoriesReducer,
   },
   devTools: process.env.NODE_ENV !== 'production',
-  // пробуем вместо axios библиотеку ky для работы с fetch и post запросами.
+  // пробуем библиотеку ky для работы с fetch и post запросами.
   middleware:(getDefaultMiddleware) => getDefaultMiddleware({
     thunk: {
       extraArgument: {
@@ -21,3 +21,5 @@ export const store = configureStore({
     serializableCheck: false,
   })
 });
+
+export default store;
