@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 
 import { loadCategories, selectAllCategories } from './categoryListSlice';
 
+import CategoryItem from '../../components/categoryItem/CategoryItem';
 import './categoriesList.scss';
 
 const CategoriesList = () => {
@@ -10,8 +11,20 @@ const CategoriesList = () => {
 
     
     return (  
-        <div>
-            
+        <div className='list'>
+            <CategoryItem />
+            <CategoryItem />    
+            <CategoryItem />    
+            <CategoryItem />    
+            <CategoryItem />    
+            <CategoryItem />    
+            <CategoryItem />    
+            <CategoryItem />    
+            <CategoryItem />    
+            <CategoryItem />    
+            <CategoryItem />    
+            <CategoryItem />    
+            <CategoryItem />    
         </div>
     );
 }
