@@ -1,23 +1,31 @@
 
 import "./categoryItem.scss";
 
-const CategoryItem = () => {
+const CategoryItem = (props) => {
+    //вытаскиваем из пропсов значения и подставляем их в нужные поля
+    const {
+        strCategory,
+        strCategoryThumb,
+        strCategoryDescription
+    }  = props;
+
     return (  
         <div className="card">
             <div className="card_image">
-                <img src="https://www.themealdb.com/images/category/beef.png" alt="Beef" />
+                <img src={strCategoryThumb} alt={strCategory} />
             </div>
             <div className="card_content">
                 <span className="card_content__title">
-                    Beef
+                    {strCategory}
                 </span>
                 <p className="card_content__description">
-                    Beef is the culinary name for meat from cattle, particularly...
+                    {/* слишком большое описание получается и не влезает в карточку нормально. режем. */}
+                    {strCategoryDescription.slice(0,60)}...
                 </p>
             </div>
             <div className="card_actions">
                 <button className="card_actions__btn">
-                    ознакомиться
+                    перейти
                 </button>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import "./preloader.scss"
 
-export const Preloader = () => {
+const Preloader = () => {
     return (  
         <div className="loader">
             <div></div>
@@ -14,3 +14,5 @@ export const Preloader = () => {
         </div>
     );
 }
+
+export default Preloader;

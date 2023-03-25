@@ -6,10 +6,11 @@ import "./error.scss";
 const Error = () => {
     return (  
         <Transitions>
-            <Header />
                 <main className="error">
+                    <span className="error_wrapper">
+                        <h1 className="error_message"> Страница не найдена!!!</h1>
+                    </span>
                 </main>
-            <Footer />
         </Transitions>
     );
 }

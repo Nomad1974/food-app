@@ -26,11 +26,11 @@ const categoriesSlice = createSlice({
             .addCase(loadCategories.rejected, (state, action) => {
                 state.status = 'rejected';
                 state.error = action.payload || action.error.message;
+                console.log(action.error.message);
             })
             .addCase(loadCategories.fulfilled, (state, action) => {
                 state.status = 'fullfilled';
-                state.entities = action.payload;
-                console.log(action.payload);
+                state.entities = action.payload.categories;
             })
     }
 });
