@@ -1,0 +1,21 @@
+.wrapper {
+    background: url(../../images/background.jpg) center (center / cover) no-repeat;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: calc(100vh - 134px);
+    padding: 20px 0;
+}
+
+.pageUp {
+    position: fixed;
+    bottom: 90px;
+    right: 110px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}

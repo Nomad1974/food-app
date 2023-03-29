@@ -1,3 +1,5 @@
+@import "../../style/variables.scss";
+
 .error {
     background: url(../../images/15.-peapod-404-Page.jpg) center (center / cover) no-repeat;
     max-width: 100%;
@@ -9,8 +11,9 @@
     }
     &_message {
         display: block;
+        position: relative;
         margin: auto;
         font-family: Roboto;
-        color: #1F253F;
+        color: $text-color;
     }
 }

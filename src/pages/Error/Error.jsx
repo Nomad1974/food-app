@@ -1,6 +1,6 @@
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
-import Transitions from "../../components/Transition";
+import Transitions from "../../features/Transition";
 import "./error.scss";
 
 const Error = () => {

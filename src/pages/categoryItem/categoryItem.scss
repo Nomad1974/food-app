@@ -1,3 +1,4 @@
+@import "../../style/variables.scss";
 
 .card {
     display: flex;
@@ -27,13 +28,13 @@
             font-size: 24px;
             font-weight: 300;
             font-family: Roboto;
-            color: #1F253F;
+            color: $text-color;
         }
         &__description {
             padding: 1px;
             font-family: Roboto;
             font-size: 15px;
-            color: #1F253F;
+            color: $text-color;
         }
     }
     &_actions {
@@ -50,12 +51,12 @@
             padding: 0 16px;
             text-transform: uppercase;
             vertical-align: middle;
-            background-color: #802B00;
+            background-color: $main-color;
             color: #fff;
             letter-spacing: .5px;
             transition: background-color .2s ease-out;
             box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-            cursor: pointer;
+            text-decoration: none;
             &:hover {
                 background-color:#963f13;
             }

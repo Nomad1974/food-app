@@ -14,7 +14,7 @@ const Main = () => {
                     Добро пожаловать в мир вкусной еды
                 </span>
             </div>
-            <Link  to={'home'}>
+            <Link  to={'/home'}>
                 <Button />
             </Link>
             

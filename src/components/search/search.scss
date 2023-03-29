@@ -1,3 +1,5 @@
+@import "../../style/variables.scss";
+
 .search {
     margin: 0 auto 20px auto;
     
@@ -24,7 +26,7 @@
         position: absolute;
         right: .5%;
         bottom: 28%;
-        background-color: #802B00;
+        background-color: $main-color;
         height: 38px;
         width: 80px;
         padding: 3px;

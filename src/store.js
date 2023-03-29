@@ -1,13 +1,18 @@
 import { configureStore } from '@reduxjs/toolkit';
 import ky from 'ky';
 
-import { categoriesReducer } from './features/categoryList/categoryListSlice';
 import * as api from './config';
+
+import { mealListReduser } from './pages/mealList/mealListSlice';
+import { categoriesReducer } from './pages/categoryList/categoryListSlice'; 
+import { visibleReducer } from './components/conteiner/containerSlice';
 
 
 const store = configureStore({
   reducer: {
     categories: categoriesReducer,
+    visible: visibleReducer,
+    meals: mealListReduser,
   },
   devTools: process.env.NODE_ENV !== 'production',
   // пробуем библиотеку ky для работы с fetch и post запросами.

@@ -26,7 +26,7 @@ const categoriesSlice = createSlice({
             .addCase(loadCategories.rejected, (state, action) => {
                 state.status = 'rejected';
                 state.error = action.payload || action.error.message;
-                console.log(action.error.message);
+                console.log(state.error);
             })
             .addCase(loadCategories.fulfilled, (state, action) => {
                 state.status = 'fullfilled';
