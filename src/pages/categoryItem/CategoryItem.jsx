@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import "./categoryItem.scss";
+//import "./categoryItem.scss";
 
 const CategoryItem = ({strCategory, strCategoryThumb, strCategoryDescription}) => {
     //вытаскиваем из пропсов значения и подставляем их в нужные поля

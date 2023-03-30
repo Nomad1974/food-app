@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import { loadCategories, selectAllCategories } from './categoryListSlice';
 
 import CategoryItem from '../categoryItem/CategoryItem';
-import './categoriesList.scss';
 
 const CategoriesList = () => {
     const dispatch = useDispatch();

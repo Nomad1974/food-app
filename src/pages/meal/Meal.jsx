@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import "./meal.scss";
+//import "./meal.scss";
 
 const Meal = ({strMeal, strMealThumb, idMeal}) => {
 
@@ -14,11 +14,13 @@ const Meal = ({strMeal, strMealThumb, idMeal}) => {
                         {strMeal}
                     </span>
                 </div>
-                <Link 
-                    to={`/meal/${idMeal}`}
-                    className="card_actions__btn">
-                        рецепт
-                </Link>
+                <div className="card_actions">
+                    <Link 
+                        to={`/meal/${idMeal}`}
+                        className="card_actions__btn">
+                            рецепт
+                    </Link>
+                </div>
             </div>
     );
 }
