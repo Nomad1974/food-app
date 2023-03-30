@@ -3,12 +3,6 @@ import { Link } from "react-router-dom";
 //import "./categoryItem.scss";
 
 const CategoryItem = ({strCategory, strCategoryThumb, strCategoryDescription}) => {
-    //вытаскиваем из пропсов значения и подставляем их в нужные поля
-    /* const {
-        strCategory,
-        strCategoryThumb,
-        strCategoryDescription
-    }  = props; */
 
     return (
         <div className="card">

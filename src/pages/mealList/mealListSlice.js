@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-export const loadMeals = createAsyncThunk (
+export const loadMeals = createAsyncThunk(
     'meals/getMeals',
     (name, {extra: {client, api}}) => {
         return client.get(api.getFilteredCategory(name)).json()

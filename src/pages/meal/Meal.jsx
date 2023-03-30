@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-//import "./meal.scss";
+import "./meal.scss";
 
 const Meal = ({strMeal, strMealThumb, idMeal}) => {
 
