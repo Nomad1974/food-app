@@ -1,3 +1,4 @@
+import Container from "../../components/conteiner/Conteiner";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import Transitions from "../../features/Transition";
@@ -10,7 +11,7 @@ const Error = () => {
                     <span className="error_wrapper">
                         <h1 className="error_message"> Страница не найдена!!!</h1>
                     </span>
-                </main>
+                </main>  
         </Transitions>
     );
 }
