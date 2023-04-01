@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 
-//import "./categoryItem.scss";
-
 const CategoryItem = ({strCategory, strCategoryThumb, strCategoryDescription}) => {
 
     return (

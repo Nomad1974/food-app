@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 
 import useReturn from "../../features/useReturn";
-//import { ReactComponent as ReturnButton } from "../../icons/up.svg";
+
 import ReturnButton from "../../components/returnButton/ReturnButton";
 import Meal from "../meal/Meal";
 

@@ -24,7 +24,8 @@ const Category = () => {
         <>
             <Container>
                 {status === 'loading' && <Preloader />}
-                {error ? <Error /> : <MealList />}
+                {error && <Error />}
+                {status === 'fullfilled' && <MealList />}
             </Container>
         </>
     );
