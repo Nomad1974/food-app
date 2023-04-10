@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import { loadRecipe, selectRecipe } from "./recipeSlice";
 import Container from "../../components/conteiner/Conteiner";
@@ -20,6 +21,11 @@ const Recipe = () => {
 
     return (  
         <>
+            <Helmet>
+                <title>
+                    The recipe detail
+                </title>
+            </Helmet>
             <Container>
                 {status === 'loading' && <Preloader />}
                 {error && <Error />}

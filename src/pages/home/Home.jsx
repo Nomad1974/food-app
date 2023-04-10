@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { Helmet } from 'react-helmet';
 
 import { selectAllCategories } from '../../features/categoryList/categoryListSlice';
 
@@ -14,6 +15,11 @@ const Home = () => {
 
     return (
         <>
+            <Helmet>
+                <title>
+                    The food categories list
+                </title>
+            </Helmet>
             <Container>
                 <Search />
                     {status === 'loading' && <Preloader />}

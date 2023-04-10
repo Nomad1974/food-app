@@ -1,8 +1,9 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-import { loadMeals, selectAllMeals } from "../mealList/mealListSlice";
+import { Helmet } from "react-helmet";
 
+import { loadMeals, selectAllMeals } from "../mealList/mealListSlice";
 import Container from "../../components/conteiner/Conteiner";
 import MealList from "../mealList/MealList";
 import Preloader from "../preloader/Preloader";
@@ -22,6 +23,11 @@ const Category = () => {
     }, [name, meals.length, dispatch]);
     return ( 
         <>
+            <Helmet>
+                <title>
+                    The food category list
+                </title>
+            </Helmet>
             <Container>
                 {status === 'loading' && <Preloader />}
                 {error && <Error />}
