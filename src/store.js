@@ -3,14 +3,16 @@ import ky from 'ky';
 
 import * as api from './config';
 
-import { mealListReduser } from './pages/mealList/mealListSlice';
-import { categoriesReducer } from './pages/categoryList/categoryListSlice'; 
+import { mealListReduser } from './features/mealList/mealListSlice';
+import { categoriesReducer } from './features/categoryList/categoryListSlice'; 
 import { visibleReducer } from './components/conteiner/containerSlice';
-import { recipeReducer } from './pages/recipe/recipeSlice';
+import { recipeReducer } from './features/recipe/recipeSlice';
+import { searchReducer } from './components/search/searchSlice';
 
 
 const store = configureStore({
   reducer: {
+    search: searchReducer,
     categories: categoriesReducer,
     visible: visibleReducer,
     meals: mealListReduser,

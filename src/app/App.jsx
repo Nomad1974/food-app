@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import Container from "../components/conteiner/Conteiner";
-import Category from "../pages/category/category";
+import Category from "../features/category/category";
 import Error from "../pages/Error/Error";
 
 import Home from "../pages/home/Home";
 import Main from "../pages/main/Main";
-import Recipe from "../pages/recipe/Recipe";
+import Recipe from "../features/recipe/Recipe";
 
 const App = () => {
 

@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 
-import useReturn from "../../features/useReturn";
+import useReturn from "../useReturn";
 
 import ReturnButton from "../../components/returnButton/ReturnButton";
 import Meal from "../meal/Meal";
@@ -13,10 +13,10 @@ const MealList = () => {
 
     return ( 
         <>
-            <ReturnButton className="return-button" onClick={goBack}/>
             <div className="list">
                 {meals.map(meal => <Meal key={meal.idMeal} {...meal}/>)}
             </div>
+            <ReturnButton className="return-button" onClick={goBack}/>
         </>
     );
 }

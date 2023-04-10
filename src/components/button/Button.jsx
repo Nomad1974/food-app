@@ -6,7 +6,7 @@ const Button = () => {
         <>
             <button className="button">
                 <span className="button_text-wrapper">
-                    Книга рецептов
+                Book of recipes
                 </span>
             </button>
         </>

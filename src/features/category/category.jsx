@@ -5,8 +5,8 @@ import { loadMeals, selectAllMeals } from "../mealList/mealListSlice";
 
 import Container from "../../components/conteiner/Conteiner";
 import MealList from "../mealList/MealList";
-import Preloader from "../../features/preloader/Preloader";
-import Error from "../Error/Error";
+import Preloader from "../preloader/Preloader";
+import Error from "../../pages/Error/Error";
 
 const Category = () => {
 //вытаскиваем имя категории

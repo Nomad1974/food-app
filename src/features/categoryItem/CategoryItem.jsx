@@ -18,7 +18,7 @@ const CategoryItem = ({strCategory, strCategoryThumb, strCategoryDescription}) =
                 <Link
                     to={`/category/${strCategory}`}
                     className="card_actions__btn">
-                    перейти
+                    Watch
                 </Link>
             </div>
         </div>

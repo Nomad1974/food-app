@@ -5,8 +5,8 @@ import { useParams } from "react-router-dom";
 import { loadRecipe, selectRecipe } from "./recipeSlice";
 import Container from "../../components/conteiner/Conteiner";
 import ReturnButton from "../../components/returnButton/ReturnButton";
-import Preloader from "../../features/preloader/Preloader";
-import Error from "../Error/Error";
+import Preloader from "../preloader/Preloader";
+import Error from "../../pages/Error/Error";
 import RecipeDetails from "../recipeDetails/RecipeDetails";
 
 const Recipe = () => {
@@ -21,10 +21,10 @@ const Recipe = () => {
     return (  
         <>
             <Container>
-                <ReturnButton />
                 {status === 'loading' && <Preloader />}
                 {error && <Error />}
                 {status === 'fullfilled' && <RecipeDetails recipes={recipes}/>};
+                <ReturnButton />
             </Container>
         </>
     );

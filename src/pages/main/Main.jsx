@@ -11,7 +11,7 @@ const Main = () => {
             </h2>
             <div className='main_heading'>
                 <span className='main_heading-text'>
-                    Добро пожаловать в мир вкусной еды
+                    Welcome to yummy food world
                 </span>
             </div>
             <Link  to={'/home'}>

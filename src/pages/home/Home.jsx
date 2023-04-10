@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
 
-import { selectAllCategories } from '../categoryList/categoryListSlice';
+import { selectAllCategories } from '../../features/categoryList/categoryListSlice';
 
-import CategoriesList from '../categoryList/CategoriesList';
+import CategoriesList from '../../features/categoryList/CategoriesList';
 import Search from '../../components/search/Search';
 import Error from '../Error/Error';
 import Preloader from '../../features/preloader/Preloader';

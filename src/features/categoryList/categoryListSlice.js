@@ -8,7 +8,7 @@ export const loadCategories = createAsyncThunk(
 );
 
 const initialState = {
-    entities: [],
+    list: [],
     status: 'idle',
     error: null,
 };
@@ -30,7 +30,7 @@ const categoriesSlice = createSlice({
             })
             .addCase(loadCategories.fulfilled, (state, action) => {
                 state.status = 'fullfilled';
-                state.entities = action.payload.categories;
+                state.list = action.payload.categories;
             })
     }
 });
@@ -38,3 +38,4 @@ const categoriesSlice = createSlice({
 export const categoriesReducer = categoriesSlice.reducer;
 //selectors
 export const selectAllCategories = state => state.categories;
+
