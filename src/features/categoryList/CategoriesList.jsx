@@ -6,6 +6,7 @@ import { loadCategories } from './categoryListSlice';
 
 import CategoryItem from '../categoryItem/CategoryItem';
 import { selectVisibleCategories } from '../../components/search/searchSlice';
+import SearchError from '../../components/searchError/SearchError';
 
 const CategoriesList = () => {
     const dispatch = useDispatch();
@@ -18,11 +19,14 @@ const CategoriesList = () => {
         } 
     }, [dispatch, list.length]);
     
-    return (  
-        <div className='list'>           
-            {/* мапим entities и складываем каждый элемент в карточку деструктуризацией и ключ */}
-            {list.map(elem => <CategoryItem  key={elem.idCategory} {...elem}/>)}
-        </div>
+    return (
+        <>
+            {!list.length && <SearchError />}
+            <div className='list'>           
+                {/* мапим entities и складываем каждый элемент в карточку деструктуризацией и ключ */}
+                {list.map(elem => <CategoryItem  key={elem.idCategory} {...elem}/>)}
+            </div>
+        </>  
     );
 }
 

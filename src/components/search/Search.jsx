@@ -1,30 +1,12 @@
-import { useDispatch, useSelector } from 'react-redux';
-
 import { ReactComponent as SearchIcon } from '../../icons/search.svg';
 import { ReactComponent as FoodCategory } from '../../icons/category.svg';
 
+import useSearch from './useSearch';
+
 import './search.scss';
-import { setSearchName, selectSearch, setSearchValue } from './searchSlice';
 
 const Search = () => {
-
-    const dispatch = useDispatch();
-    const {searchValue} = useSelector(selectSearch);
-
-    const handleSubmit = () =>{ 
-        dispatch(setSearchName(searchValue));
-        dispatch(setSearchValue(''));
-    };
-
-    const handleKey = (event) => {
-        if (event.key === 'Enter') {
-            handleSubmit();
-        }
-    };
-
-    const handleChange = (event) => {
-        dispatch(setSearchValue(event.target.value));
-    };
+    const [handleChange, handleKey, searchValue, handleSubmit] = useSearch();
 
     return (
         <div className="search">

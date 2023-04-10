@@ -1,14 +1,10 @@
 import { Link } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import useHeader from './useHeader';
+
 import './header.scss';
-import { selectSearch } from '../search/searchSlice';
-import { useCallback } from 'react';
 
 const Header = () => {
-    const dispatch = useDispatch();
-    const {clearControls} = useSelector(selectSearch);
-
-    const cleanUp = () => dispatch(clearControls());
+    const [cleanUp] = useHeader();
 
     return (
         <nav className="header">

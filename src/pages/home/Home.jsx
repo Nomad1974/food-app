@@ -1,7 +1,5 @@
-import { useSelector } from 'react-redux';
 import { Helmet } from 'react-helmet';
-
-import { selectAllCategories } from '../../features/categoryList/categoryListSlice';
+import useHome from './useHome';
 
 import CategoriesList from '../../features/categoryList/CategoriesList';
 import Search from '../../components/search/Search';
@@ -11,7 +9,8 @@ import Container from '../../components/conteiner/Conteiner';
 import './home.scss';
 
 const Home = () => {
-    const { status, error } = useSelector(selectAllCategories);
+
+    const [status, error] = useHome();
 
     return (
         <>

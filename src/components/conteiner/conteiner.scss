@@ -19,4 +19,7 @@
     width: 60px;
     height: 60px;
     cursor: pointer;
+    @media (max-width: 1400px) {
+        z-index: -1;
+    }
 }
