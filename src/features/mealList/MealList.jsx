@@ -1,15 +1,9 @@
-import { useSelector } from "react-redux";
-
-import useReturn from "../useReturn";
-
 import ReturnButton from "../../components/returnButton/ReturnButton";
 import Meal from "../meal/Meal";
-
-import { selectAllMeals } from "./mealListSlice";
+import useMealList from "./useMealList";
 
 const MealList = () => {
-    const {meals} = useSelector(selectAllMeals)
-    const [goBack] = useReturn();
+    const [meals, goBack] = useMealList();
 
     return ( 
         <>

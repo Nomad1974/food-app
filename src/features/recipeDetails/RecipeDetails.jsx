@@ -1,11 +1,9 @@
-import { useSelector } from "react-redux";
-
-import { selectRecipe } from "../recipe/recipeSlice";
+import useRecipeDetails from "./useRecipeDetails";
 
 import "./recipeDetails.scss";
 
 const RecipeDetails = () => {
-    const {recipes} = useSelector(selectRecipe);
+    const [recipes] = useRecipeDetails();
 
     return (  
         <div className="recipe">
