@@ -18,7 +18,7 @@ const Meal = ({strMeal, strMealThumb, idMeal}) => {
                     <Link 
                         to={`/meal/${idMeal}`}
                         className="card_actions__btn">
-                            рецепт
+                            Recipe
                     </Link>
                 </div>
             </div>

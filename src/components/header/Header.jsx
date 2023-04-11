@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <nav className="header">
             <div className="header_wrapper">
-                <Link to="/home" className="header_logo" onClick={cleanUp}>
+                <Link to="/" className="header_logo" onClick={cleanUp}>
                 Book of recipes
                 </Link>
             </div>

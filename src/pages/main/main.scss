@@ -12,6 +12,9 @@
         vertical-align: Top;
         letter-spacing: 0.36px;
         color: #79B52F;
+        @media (max-width: 576px) {
+            font-size: 30px;
+        }
     }
     &_heading {
         margin-top: 14px;
@@ -23,6 +26,10 @@
             line-height: 60px;
             letter-spacing: 0.36px;
             color: #1F253F;
+            @media (max-width: 576px) {
+                font-size: 45px;
+                line-height: 45px;
+            }
         }
     }
 }

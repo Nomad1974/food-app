@@ -18,8 +18,8 @@ const RecipeDetails = () => {
             <table className="recipe_ingredients-header">
                 <thead>
                     <tr>
-                        <th>Ингредиенты</th>
-                        <th>Количество</th>
+                        <th>Ingredients</th>
+                        <th>Quantity</th>
                     </tr>
                 </thead>
                 <tbody>

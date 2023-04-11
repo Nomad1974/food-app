@@ -6,7 +6,7 @@ const Error = () => {
         <Transitions>
                 <main className="error">
                     <span className="error_wrapper">
-                        <h1 className="error_message"> Страница не найдена!!!</h1>
+                        <h1 className="error_message"> The page is not found!!!</h1>
                     </span>
                 </main>  
         </Transitions>

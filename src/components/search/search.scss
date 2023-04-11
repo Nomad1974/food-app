@@ -20,6 +20,10 @@
         font-size: 20px;
         font-family: Roboto;
         color: #1F253F;
+        @media (max-width: 576px) {
+            padding-left: 40px;
+            font-size: 16px;
+        }
     }
     &_button {
         display: inline-block;
@@ -37,6 +41,9 @@
         &:hover {
             background-color: /* #2bbbad */ #963f13;
             transition: 0.5s;
+        }
+        @media (max-width: 576px) {
+            width: 75px;
         }
     }
     &_icon-wrapper {
