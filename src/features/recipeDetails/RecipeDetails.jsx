@@ -9,8 +9,8 @@ const RecipeDetails = () => {
         <div className="recipe">
             <img src={recipes.strMealThumb} alt={recipes.strMeal} />
             <h1 className="recipe_header">{recipes.strMeal}</h1>
-            <h6 className="recipe_subtitle">Категория: {recipes.strCategory}</h6>
-            {recipes.strArea ? <h6 className="recipe_subtitle">Территория: {recipes.strArea}</h6> : null}
+            <h6 className="recipe_subtitle">Category: {recipes.strCategory}</h6>
+            {recipes.strArea ? <h6 className="recipe_subtitle">Area: {recipes.strArea}</h6> : null}
             <p className="recipe_description">
                 {recipes.strInstructions}
             </p>
